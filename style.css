@@ -1,0 +1,478 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	width: 100vw;
+	background-color: #FFF;
+}
+
+p{
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+hr{
+	border: 3px solid white;
+	display: inline-block;
+	width: 60px;
+	border-radius: 2px;
+	transition-duration: 0.5s;
+}
+
+
+hr:hover{
+	width: 170px;
+	transition-duration: 0.5s;
+}
+
+
+/*Inicio da estilização da home section*/
+#home{
+	height: 100vh;
+	width: 98vw;
+	margin:8px auto; 
+	display: grid;
+	grid-template-areas:"menu menu" "lombok lombok" ;
+	background: #ece8e5 url("background.jpg") no-repeat;
+	background-position-y:-200px; 
+	background-position-x:-50px; 
+}
+
+#home #logo{
+	font-size: 42px;
+}
+
+/*menu superior da sessão home*/
+#home nav{
+	text-align: right;
+	margin-right: 30px;
+	line-height: 72px;
+/* Para alinhar o logo ao menu, utilizei o line-height do tamanho da 
+fonte do logo (42px)+(30px)altura do menu=72px */
+}
+
+#home nav li{
+	display: inline-block;
+}
+
+#home nav li a{
+	display: block;
+	width: 120px;
+	height: 30px;
+	color: black;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 30px;
+}
+
+#home .subscribe{
+	border: 1px solid black;
+}
+
+#home #caixa-texto{
+	font-size: 50px;
+	text-align: center;	
+	width: 200%;
+	position: relative;
+}
+
+#home #caixa-texto .border{
+	margin-top: -30px;
+}
+
+
+/*Fim da estilização da home section*/
+
+
+/*Inicio da estilização da article section*/
+#article{
+	background: #ece8e5;
+	height: 95vh;
+	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 20px;
+	box-sizing: content-box;
+}
+
+
+#article hr:hover{
+	width: 170px;
+	transition-duration: 0.5s;
+}
+
+#article {
+	margin-top: 30px;
+
+}
+
+#article .article-amostra{
+	box-shadow: 7px 5px 7px rgba(0,0,0, 0.5);
+	display: inline-block;
+	width: 280px;
+	height: 400px;
+	margin: 5px;
+}
+
+#article .article-amostra img,
+#article .article-amostra h4{
+	background-color: white;
+	height: 200px;
+	width: 280px;	
+}
+
+
+
+#article .article-amostra h4{
+    line-height: 20px;
+    padding-top: 50px;
+	font-weight: 100;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	margin-top: -5px;
+
+}
+
+
+/*Fim da estilização da article section*/
+
+
+/*Inicio da estilização da about section*/
+#about{
+	height: 50vh;
+	display:grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: "imagem about"
+}
+
+.about{
+	margin: 30px auto;
+	text-align: center;
+}
+
+.about hr{
+	border: 3px solid #212d23;
+	display: inline-block;
+	width: 60px;
+	border-radius: 2px;
+	transition-duration: 0.5s;
+}
+
+
+#about hr:hover{
+	width: 100px;
+	transition-duration: 0.5s;
+}
+
+#about .imagem{
+	background: url("about.jpg") center no-repeat;
+	background-size: cover;
+
+
+}
+
+.about .text{
+	background: white;
+	margin: 0 auto;
+	width: 70%;
+	margin-top: 40px;
+	text-align: left;
+	word-spacing: 5px;
+	letter-spacing: 2px;	
+}
+
+/*Inicio da estilização da subscribe section*/
+#subscribe{
+	background: #ece8e5;
+	height: 40vh;
+	text-align:center;
+	padding-top: 80px;
+}
+
+#subscribe form [type="email"]{
+	width: 40%;
+	height: 40px;
+	padding: 10px;
+	margin: 20px 0;
+	font-size: 15px;
+}
+
+#subscribe form [type="submit"]{
+	height: 35px;
+	width: 15%;
+	background: transparent;
+	outline: none;
+	border: 1px solid #1e2f23;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	transition-duration: 0.4s;
+}
+
+#subscribe form [type="submit"]:hover{
+	box-shadow: 5px 2px 7px rgba(30,47,35,0.5) ;
+	transition-duration: 0.2s;
+}
+
+#footer{
+	height: 20vh;
+	line-height: 20vh;
+	display: grid;
+	grid-template-areas: "footer sociais";
+	width:95%;
+	margin: 0 auto;
+}
+
+#footer .sociais a img{
+	width: 50px;
+	margin-right: 5px;
+	margin-top: 75px;
+}
+.sub-menu{
+	text-align: right;
+}
+
+#footer .sub-menu nav li{
+	display: inline-block;
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+
+#footer .sub-menu nav li a{
+color: black;
+font-size: 18px;
+text-transform: uppercase;
+}
+
+footer{
+	background: black;
+	color: white;
+	text-align: center;
+	padding: 5px 0; 
+}
+
+footer a{
+	font-size: 18px;
+	color: #7b8e74;
+	text-decoration: underline;
+}
+
+@media (max-width: 785px){
+	body{
+		background: #FFF;
+	}
+
+	#home{
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-areas:"menu" "lombok" ;
+	background-position-y:-200px; 
+	background-position-x:-500px; 
+	}
+
+	#home nav{
+	text-align: right;
+	margin: -150px auto;
+	}
+
+	#home #caixa-texto{
+	font-size: 30px;
+	text-align: center;	
+	width: 100%;
+	position: relative;
+	top: -150px;
+	}
+
+	#home hr{
+		margin-top: 30px;
+	}
+
+	#article{
+		padding-top: 30px;
+		box-sizing: border-box;
+		height: 1400px;
+	}
+
+	#about{
+	height: 70vh;
+	display: block;
+
+	}
+	
+	.about .text{
+	 	display: block;
+	 	width: 80%;
+	}
+	.about .imagem{
+		display: none;
+
+	}
+
+	#subscribe{
+	background: #ece8e5;
+	height: 25vh;
+	text-align:center;
+	padding-top: 40px;
+	}
+
+	#subscribe form [type="email"]{
+		width: 60%;
+		height: 40px;
+		padding: 10px;
+		margin: 15px 0;
+		font-size: 12px;
+	}
+
+	#subscribe form [type="submit"]{
+		height: 35px;
+		width: 25%;
+		background: transparent;
+		outline: none;
+		border: 1px solid #1e2f23;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		transition-duration: 0.4s;
+	}
+
+	#footer{
+		height: 10vh;
+		line-height: 10vh;
+		display: grid;
+		grid-template-areas: "footer" "sociais";
+		width:95%;
+		margin: 0 auto;
+	}
+
+	#footer .sub-menu nav li a{
+		color: black;
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+
+	#footer .sociais{
+		text-align: center;
+	}
+
+
+
+	footer{
+	 position: relative;
+	 top: 20vh
+	}	
+	}
+
+
+@media(max-width: 350px){
+	#home{
+	width: 100vw;
+	margin:8px auto; 
+	display: grid;
+	grid-template-areas:"menu" "lombok" "heal" ;
+	background: #ece8e5 url("../images/background.jpg") no-repeat;
+	background-position-y:-200px; 
+	background-position-x:-50px; 
+	}
+
+	#home #logo{
+	font-size: 42px;
+	}
+
+	#home #logo{
+	grid-area: menu;
+	}
+
+	#home nav{
+	text-align: center;
+	line-height: 0px;
+	margin-top: -25px;
+	}
+
+	#home nav li a{
+	width: 80px;
+	height: 25px;
+	line-height: 25px;
+	color: black;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;	
+
+	}
+	#home .subscribe{
+	border: 1px solid black;
+
+	}
+
+	#home #caixa-texto{
+	font-size: 28px;
+	text-align: center;	
+	width: 98vw;
+	position: relative;
+	top: -50px;
+	}
+	#home #caixa-texto p{
+		font-size: 24px;
+	}
+
+	#home #caixa-texto .border{
+	margin-top: -30px;
+	}
+
+	#about{
+	height: 100vh;
+	}
+
+	#about .imagem{
+		display: none;
+	}
+
+	.about{
+	margin: 15px auto;
+	text-align: center;
+
+	}
+
+
+	#subscribe form [type="email"]{
+	width: 80%;
+	}
+
+	#subscribe form [type="submit"]{
+	width: 50%;
+	background: transparent;
+	outline: none;
+	border: 1px solid #1e2f23;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	transition-duration: 0.4s;
+	}
+
+
+
+	#footer .sub-menu nav li{
+	display: inline-block;
+	text-transform: uppercase;
+	width: 66px;
+	height: 45px;
+	border: 1px solid white;
+	line-height: 45px;
+	text-align: center;
+
+	}
+
+	#footer .sub-menu nav li a{
+	color: black;
+	font-size: 12px;
+	text-transform: uppercase;
+
+	}		
+
+	footer{
+	margin-top: 50px;
+	}
+	}
